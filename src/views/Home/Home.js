@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 
 // @material-ui/icons
 
@@ -21,6 +22,8 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
+import ClientSection from "./Sections/ClientSection.js";
+import EventSection from "./Sections/EventSection.js";
 
 const dashboardRoutes = [];
 
@@ -30,50 +33,53 @@ export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
-    <div>
+    <div style={{fontFamily: "poppins"}}>
       <Header
+        style={{height:"100px"}}
         color="transparent"
         routes={dashboardRoutes}
         brand="Boomblast Creative"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 200,
           color: "white"
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+      <Parallax image={require("assets/img/group.png")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
-              <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+              <h1 className={classes.title} style={{fontFamily:"poppins"}}>Boomblast Creative Event Organizer.</h1>
+              <h4 style={{fontSize: "16px", fontFamily:"poppins", color: "#525252"}}>
+              Merupakan salah satu anak perusahaan PT. CHRISTAN JAYA ABADI yang bergerak di event planner.Dimana kami ada sebagai promotor atau mediator setiap perusahaan atau pun personal dalam merealisasikan event yang diinginkan sesuai dengan harapan mitra.Guna untuk meningkatkan nilai jual suatu product, meningkatkan kesadaran masyarakat atas suatu product, mengatur suatu acara seminar atau pertemuan, dan pameran ( MICE : Meeting, Investment, Convenction and Exhibition).
               </h4>
               <br />
+              <Link to="/contact-us">
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
-                Watch video
+                <i className="fas fa-phone" />
+                Contact Us
               </Button>
+              </Link>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
-          <ProductSection />
-          <TeamSection />
-          <WorkSection />
+      <div style={{width:"100%", backgroundColor:"white"}}>
+        <div className={classNames(classes.main, classes.mainRaised)}>
+          <div className={classes.container} style={{backgroundColor:"white"}}>
+            <ClientSection />
+            <EventSection/>
+            <ProductSection />
+            <TeamSection />
+            <WorkSection />
+          </div>
         </div>
       </div>
       <Footer />

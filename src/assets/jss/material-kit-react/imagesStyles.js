@@ -1,6 +1,6 @@
 const imagesStyles = {
   imgFluid: {
-    maxWidth: "100%",
+    maxWidth: "auto",
     height: "auto"
   },
   imgRounded: {

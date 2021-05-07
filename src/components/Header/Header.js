@@ -11,6 +11,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
+import Logo from "../../assets/img/logo2.png";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
@@ -53,16 +54,16 @@ export default function Header(props) {
         .classList.remove(classes[changeColorOnScroll.color]);
     }
   };
-  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+  const { color, rightLinks, leftLinks, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = <Button className={classes.title}><img src={Logo}></img></Button>;
   return (
-    <AppBar className={appBarClasses}>
+    <AppBar className={appBarClasses} style={{fontFamily:"poppins"}}>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>
@@ -79,7 +80,7 @@ export default function Header(props) {
         </Hidden>
         <Hidden mdUp>
           <IconButton
-            color="inherit"
+            color="black"
             aria-label="open drawer"
             onClick={handleDrawerToggle}
           >

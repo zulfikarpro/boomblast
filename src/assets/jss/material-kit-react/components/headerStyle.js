@@ -15,19 +15,21 @@ import {
 const headerStyle = {
   appBar: {
     display: "flex",
+    flex: "0 0 100%",
+    height: "10%",
     border: "0",
     borderRadius: "3px",
     padding: "0.625rem 0",
     marginBottom: "20px",
     color: "#555",
     width: "100%",
-    backgroundColor: "#fff",
+    backgroundColor: "transparent",
     boxShadow:
       "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
     transition: "all 150ms ease 0s",
-    alignItems: "center",
+    alignItems: "center center",
     flexFlow: "row nowrap",
-    justifyContent: "flex-start",
+    justifyContent: "center",
     position: "relative",
     zIndex: "unset"
   },
@@ -41,6 +43,7 @@ const headerStyle = {
   },
   container: {
     ...container,
+    width: "120%",
     minHeight: "50px",
     flex: "1",
     alignItems: "center",

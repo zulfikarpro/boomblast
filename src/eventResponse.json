@@ -1,0 +1,28 @@
+{
+    "msg":"success",
+    "status":200,
+    "data":[
+        {
+            "id":1,
+            "title": "event1",
+            "image":"",
+            "date":"",
+            "description": "Lorem ipsum dolor sit amet."
+        },
+        {
+            "id":2,
+            "title": "event2",
+            "image":"",
+            "date":"",
+            "description": "Lorem ipsum dolor sit amet."
+        },
+        {
+            "id":3,
+            "title": "event3",
+            "image":"",
+            "date":"",
+            "description": "Lorem ipsum dolor sit amet."
+        }
+            
+    ]
+}
