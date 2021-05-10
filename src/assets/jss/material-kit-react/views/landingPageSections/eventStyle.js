@@ -46,6 +46,12 @@ const eventStyle = {
   },
   description: {
     color: "#999"
+  },
+  lineSeparator: {
+      height:"5px", 
+      backgroundColor:"#FF3767", 
+      marginRight:"10%", 
+      marginLeft:"10%"
   }
 };
 

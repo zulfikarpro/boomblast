@@ -30,16 +30,20 @@ import unakaffe from "assets/img/unakaffe.png";
 // import tri from "assets/img/tri.png";
 
 const useStyles = makeStyles(styles);
-export default function ClientSection() {
-    const classes = useStyles();
+export default function ClientSection(props) {
+  const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
     classes.imgRoundedCircle,
     classes.imgFluid
   );
+  const {contentData} = props
     return (
       <div style={{display:"flex", flexDirection: 'column'}}>
-        <h2 className={classes.title}>Our Client</h2>
+        <div style={{display:"flex", flexDirection:'column'}}>
+          <h2 className={classes.title}>{contentData.title}</h2>
+          <div className={classes.lineSeparator} style={{maxWidth:"30%"}}></div>
+        </div>
         <div className={classes.container}>
           <img className={classes.image}src={leaf} style={{zIndex:"2"}}>
           </img>
@@ -47,21 +51,21 @@ export default function ClientSection() {
             <div className={classes.section} >
               <div style={{justifyContent: 'center'}}>
                 <GridContainer>
-                  <GridItem xs={12} sm={12} md={4}>
+                  <GridItem xs={12} sm={4} md={4}>
                     <Card plain>
                       <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                         <img src={tri} alt="..." className={imageClasses} />
                       </GridItem>
                     </Card>
                   </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
+                  <GridItem xs={12} sm={4} md={4}>
                     <Card plain>
                       <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                         <img src={kapalApi} alt="..." className={imageClasses}/>
                       </GridItem>
                     </Card>
                   </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
+                  <GridItem xs={12} sm={4} md={4}>
                     <Card plain>
                       <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                         <img src={axis} alt="..." className={imageClasses}/>

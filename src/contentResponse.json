@@ -1,0 +1,38 @@
+{
+    "data":{
+        "home":{
+            "main":{
+                "title":"Boomblast Creative Event Organizer.",
+                "detail":"Merupakan salah satu anak perusahaan PT. CHRISTAN JAYA ABADI yang bergerak di event planner.Dimana kami ada sebagai promotor atau mediator setiap perusahaan atau pun personal dalam merealisasikan event yang diinginkan sesuai dengan harapan mitra.Guna untuk meningkatkan nilai jual suatu product, meningkatkan kesadaran masyarakat atas suatu product, mengatur suatu acara seminar atau pertemuan, dan pameran ( MICE : Meeting, Investment, Convenction and Exhibition).",
+                "button":"Contact Us"
+            },
+            "clientSection":{
+                "title":"Our Client"
+            },
+            "eventSection":{
+                "title":"Our Latest Event"
+            }
+        },
+
+        "footer":{
+            "lokasi":{
+                "title":"Lokasi",
+                "detail":"RUKO ALAM SUTRA \nJL. SAMARA 9 NO 17 PARAMOUNT GADING SERPONG,\nTANGERANG – BANTEN."
+            },
+            "telepon":{
+                "title":"Telepon",
+                "detail":[
+                    "Kantor : (021) 22227190",
+                    "Admin 1 : (021) 1231-1231",
+                    "Admin 2 : (021) 1231-1231",
+                    "FAX : (021) 1231-1231"
+
+                ]
+            },
+            "email":{
+                "title": "Email",
+                "detail": "event@boomblastcreative.com"
+            }
+        }
+    }
+}

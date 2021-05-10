@@ -45,6 +45,12 @@ const clientStyle = {
   },
   description: {
     color: "#999"
+  },
+  lineSeparator: {
+      height:"5px", 
+      backgroundColor:"#FF3767", 
+      marginRight:"40%", 
+      marginLeft:"40%"
   }
 };
 

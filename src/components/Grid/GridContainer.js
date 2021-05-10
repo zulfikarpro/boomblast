@@ -18,9 +18,10 @@ const useStyles = makeStyles(styles);
 
 export default function GridContainer(props) {
   const classes = useStyles();
-  const { children, className, ...rest } = props;
+  const { children, className, direction, ...rest} = props;
+  console.log('direction', direction);
   return (
-    <Grid container {...rest} className={classes.grid + " " + className}>
+    <Grid container {...rest} className={classes.grid + " " + className} direction={direction}>
       {children}
     </Grid>
   );
