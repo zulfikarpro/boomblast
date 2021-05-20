@@ -22,14 +22,14 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={Home}/>
       <Route path ="/aboutus" component={AboutUs}/>
+      <Route path="/contactus" component={ContactUs}/>
       {/* <Route path="/landing-page" component={LandingPage} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} />
-      <Route path="/contact-us" component={ContactUs} />
       <Route path="/aboutus" component={AboutUs} />
       <Route path="/our-team" component= {OurTeam} />
-      <Route path="/component" component= {Components} />
-      <Route exact="/" component={Home} /> */}
+      <Route path="/component" component= {Components} /> */}
+      <Route exact="/" component={Home} />
       <Route><h1>404</h1></Route>
     </Switch>
   </Router>,

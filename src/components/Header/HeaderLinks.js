@@ -53,7 +53,7 @@ export default function HeaderLinks(props) {
         >Our Team</Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to='/profile-page'>
+        <Link to='/contactus'>
           <Button
             color="transparent"
             target="_blank"

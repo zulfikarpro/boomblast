@@ -20,7 +20,7 @@ import Parallax from "components/Parallax/Parallax.js";
 // import  from "assets/jss/material-kit-react/views/landingPage.js";
 import contentResponse from "contentResponse.json";
 import styles from "assets/jss/material-kit-react/views/aboutUs/aboutUsStyle";
-
+// import contentResponse from "../../contentResponse.json"
 
 const dashboardRoutes = [];
 
@@ -28,12 +28,12 @@ const useStyles = makeStyles(styles);
 export default function AboutUs(props) {
   const classes = useStyles();
   const { ...rest } = props;
-  const content = contentResponse.data.home.main;
+  const content = contentResponse.data.aboutus;
   return (
-    <div style={{fontFamily: "poppins", backgroundColor:'#ffffff', display:'flex', flexDirection:'column'}}>
+    <div style={{fontFamily: "poppins", backgroundColor:'white', display:'flex', flexDirection:'column'}}>
       <Header
         style={{height:"100px"}}
-        color="transparent"
+        color="white"
         routes={dashboardRoutes}
         brand="Boomblast Creative"
         rightLinks={<HeaderLinks />}
@@ -46,10 +46,10 @@ export default function AboutUs(props) {
       />
         <div className={classes.container}> 
             <div style={{marginBottom:'2%'}}>
-                <h2 className={classes.title}>About Us</h2>
+                <h2 className={classes.title}>{content.title}</h2>
                 <div className={classes.lineSeparator}></div>
             </div>
-            <div className={classes.container2}>
+            {/* <div className={classes.container2}>
                 <GridContainer>
                     <GridItem xs={6} sm={6} md={6}>
                         <h4>
@@ -61,7 +61,7 @@ export default function AboutUs(props) {
                     <img src={require('assets/img/aboutus.png')} alt='event'/>
                     </GridItem>
                 </GridContainer>
-            </div>
+            </div> */}
             {/* <div style={{display:'flex', height:'10%', backgroundColor:'#FF7596', width:'100%', marginTop:'3%'}}className={classes.container2}> */}
             <div style={{display:'flex', height:'50%', backgroundColor:'black', flexDirection: 'column', justifyContent:'center', marginBottom:'2%',marginTop:'2%', width:'100%'}}>
                 <div className={classes.componentPink}>
@@ -78,7 +78,7 @@ export default function AboutUs(props) {
                             </GridItem>
                             <GridItem md={10} xs={6}>
                                 <h5 style={{color:'white'}}>
-                                    Menjadi salah satu event organizer indonesia yang akan menjembatani perusahan-perusahan atau personal mitra dalam mewujudkan  nilai suatu acara yang diinginkan. Sehingga dengan mempercayakan kami sebagai event planer anda, kami dapat merealisasi ekspektasi dan target event mitra.
+                                    {content.detail.visi}
                                 </h5>
                             </GridItem>
                             
@@ -99,7 +99,7 @@ export default function AboutUs(props) {
                             </GridItem>
                             <GridItem md={10} xs={6}>
                                 <h5 style={{color:'#ad5368'}}>
-                                Boomblast creative event organizer merupakan perusahaan yang bergerak dibidang event planer mice (meeting, incentive, convention, and exebition) yang akan membawa setiap partner mitra untuk bekerja, berkembang dan maju bersama.
+                                {content.detail.misi}
                                 </h5>
                             </GridItem>
                             

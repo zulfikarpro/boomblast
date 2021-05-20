@@ -42,7 +42,7 @@ export default function Footer(props) {
           <img src={logo} style={{width:'190px', height:'150px',alignSelf: 'flex-end'}}/>
         
           </div>
-          <GridContainer spacing ={1} style={{zIndex:'3'}}>
+          <GridContainer spacing ={1} style={{zIndex:'3', marginLeft:'50px'}}>
             <GridItem xs={4} md={4} sm={4}>
               <div className={classes.title}>
               <span style={{color: "#FF6C8F"}}>
@@ -94,7 +94,7 @@ export default function Footer(props) {
           <div className={classes.container} style={{marginTop:'2%'}}>
           <div style={{display:'flex', flexDirection:'column', fontFamily:"poppins", fontSize:"12px"}}>
             <h5 style={{textAlign:'center'}}>
-            Copyright © 2021. BoomBlast Creative Event Organizer. All Rights Reserved
+            {content.copyright}
             </h5>
           </div>
         </div>
