@@ -64,7 +64,13 @@ const contactusStyle = {
     minimumHeight:"20%",
     width:'100%', 
     backgroundColor:"#FFF9F9"
-  }
+  },
+  buttonSubmit:{
+      width:'20%', 
+      alignSelf: 'center', 
+      backgroundColor:'#FF7596'
+    }
+  
 };
 
 export default contactusStyle;

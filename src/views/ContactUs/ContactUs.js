@@ -30,7 +30,7 @@ export default function ContactUs(props) {
   const [phone, setPhone] = useState('')
   const [desc, setDesc] = useState('')
   const data = jsonData.data
-  const content = contentResponse.data.aboutus;
+  const content = contentResponse.data.contactus;
   const classes = useStyles();
   const { ...rest } = props;
   const imageClasses = classNames(
@@ -121,9 +121,9 @@ export default function ContactUs(props) {
                   onChange = {a=>setDesc(a)}
                 />
               </GridItem>
-              <GridItem xs={12} md={12}>
-                <Button onClick = {handlingInput}>
-                  INI BUTTON
+              <GridItem xs={12} md={12} style={{ display: 'flex', flexDirection:'column', alignContent: 'center', justifyContent: 'center'}}>
+                <Button onClick = {handlingInput} className={classes.buttonSubmit}>
+                  KIRIM
                 </Button>
               </GridItem>
             </GridContainer>
