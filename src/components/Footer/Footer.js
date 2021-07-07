@@ -46,13 +46,13 @@ export default function Footer(props) {
             <GridItem xs={4} md={4} sm={4}>
               <div className={classes.title}>
               <span style={{color: "#FF6C8F"}}>
-              <i class="fas fa-map-marker"></i>
+              <i className="fas fa-map-marker"></i>
               </span>
               {content.lokasi.title}
               </div>
               <div style={{fontSize:"12px", fontFamily:"poppins", padding:"0px", margin:"0px", color:"black",textAlign: "left"}}>
               {content.lokasi.detail.split("\n").map(data=>{
-                return <GridContainer>
+                return <GridContainer key={data}>
                   <GridItem xs={12} sm={12} md={12}>
                     {data}
                   </GridItem>
@@ -63,13 +63,13 @@ export default function Footer(props) {
             <GridItem xs={4} md={4} sm={4}>
               <div className={classes.title}>
                 <span style={{color: "#FF6C8F"}}>
-                <i class="fas fa-phone"></i>
+                <i className="fas fa-phone"></i>
                 </span>
                 {content.telepon.title}
                 </div>
                 <div style={{fontSize:"12px", fontFamily:"poppins", padding:"0px", margin:"0px", color:"black", textAlign:"left"}}>
                 {content.telepon.detail.map(data=>{
-                  return <GridContainer>
+                  return <GridContainer key={data}>
                     <GridItem xs={12} md={12} sm={12}>
                       {data}
                     </GridItem>
@@ -81,7 +81,7 @@ export default function Footer(props) {
             <GridItem xs={12} md={4} sm={4}>
               <div className={classes.title}>
                 <span style={{color: "#FF6C8F"}}>
-                <i class="fas fa-envelope"></i>
+                <i className="fas fa-envelope"></i>
                 </span>
                 {content.email.title}
               </div>

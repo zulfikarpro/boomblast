@@ -26,7 +26,14 @@ export default function CustomInput(props) {
     inputRootCustomClasses,
     success,
     onChange,
+    value
   } = props;
+  // const [isi, setIsi] = React.useState(value)
+  const handleChange = (e) => {
+    // setIsi(e.target.value)
+    onChange(e.target.value);
+    // set
+  }
 
   const labelClasses = classNames({
     [" " + classes.labelRootError]: error,
@@ -73,9 +80,20 @@ export default function CustomInput(props) {
           underline: underlineClasses
         }}
         id={id}
-        onChange = {(e)=>props.onChange(e.target.value)}
+        multiline={props.multiline}
+        // onChange = { (e) => this.props.onChange(e.target.value) }
+        onChange = {handleChange}
+        value = {value}
+        type = {props.type}
         {...inputProps}
       />
+      {/* <Input
+          // className = 'input'
+          // type = { this.props.type }
+          // placeholder = { this.props.placeholder }
+          // value = { this.props.value }
+          onChange = { (e) => this.props.onChange(e.target.value) }
+        /> */}
     </FormControl>
   );
 }

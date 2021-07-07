@@ -23,7 +23,7 @@ const signupPageStyle = {
     border: "0",
     alignItems: "center",
     "&:before": {
-      background: "rgba(0, 0, 0, 0.5)"
+      // background: "rgba(0, 0, 0, 0.5)"
     },
     "&:before,&:after": {
       position: "absolute",
@@ -35,14 +35,14 @@ const signupPageStyle = {
       top: "0",
       content: '""'
     },
-    "& footer li a,& footer li a:hover,& footer li a:active": {
-      color: "#FFFFFF"
-    },
-    "& footer": {
-      position: "absolute",
-      bottom: "0",
-      width: "100%"
-    }
+    // "& footer li a,& footer li a:hover,& footer li a:active": {
+    //   color: "#FFFFFF"
+    // },
+    // "& footer": {
+    //   position: "absolute",
+    //   bottom: "0",
+    //   width: "100%"
+    // }
   },
   form: {
     margin: "0"
@@ -83,9 +83,9 @@ const signupPageStyle = {
     textAlign: "center",
     padding: "0"
   },
-  inputIconsColor: {
-    color: "#495057"
-  }
+  // inputIconsColor: {
+  //   color: "#495057"
+  // }
 };
 
 export default signupPageStyle;

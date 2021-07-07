@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -13,15 +13,15 @@ import eventResponse from "eventResponse.json"
 const useStyles = makeStyles(styles);
 export default function EventSection(props) {
     const classes = useStyles();
-    const response = eventResponse;
+    // const response = eventResponse;
     const responseData = eventResponse.data;
-    const gridData = (data) =>{
-      const column = 3;
-      for(var i =0; i<data.length; i++){
-        // console.log(data[i].title)
-        // data[i].title
-      }
-    }
+    // const gridData = (data) =>{
+    //   const column = 3;
+    //   for(var i =0; i<data.length; i++){
+    //     // console.log(data[i].title)
+    //     // data[i].title
+    //   }
+    // }
 
     // useEffect(()=>{
 
